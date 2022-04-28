@@ -7,8 +7,9 @@ public class modelOfStudents {
     private Long id;
     private String name;
     private String surname;
-    private String father_name; //optional
-    private int _class;
+    private String father_name;
+    private String lang_prog;
+    private int year_experience;
     private String course;
     //todo entering of students
     public Long getId() {
@@ -41,13 +42,6 @@ public class modelOfStudents {
         this.father_name = father_name;
     }
 
-    public int get_class() {
-        return _class;
-    }
-
-    public void set_class(int _class) {
-        this._class = _class;
-    }
 
     public String getCourse() {
         return course;
