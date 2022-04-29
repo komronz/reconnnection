@@ -11,13 +11,24 @@ public class modelOfStudents {
     private String lang_prog;
     private int year_experience;
     private String course;
-    //todo entering of students
+
+    public modelOfStudents(Long id, String name, String surname, String father_name, String lang_prog, int year_experience, String course) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.father_name = father_name;
+        this.lang_prog = lang_prog;
+        this.year_experience = year_experience;
+        this.course = course;
+    }
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getName() {
         return name;
     }
@@ -42,6 +53,21 @@ public class modelOfStudents {
         this.father_name = father_name;
     }
 
+    public String getLang_prog() {
+        return lang_prog;
+    }
+
+    public void setLang_prog(String lang_prog) {
+        this.lang_prog = lang_prog;
+    }
+
+    public int getYear_experience() {
+        return year_experience;
+    }
+
+    public void setYear_experience(int year_experience) {
+        this.year_experience = year_experience;
+    }
 
     public String getCourse() {
         return course;
